@@ -59,7 +59,7 @@
   .hero__copy .v-lede { margin-top: var(--v-5); max-width: 30ch; color: #d3dde0; }
   .hero__btns { margin-top: var(--v-6); display: flex; gap: var(--v-3); flex-wrap: wrap; }
   .hero .v-btn--ghost { box-shadow: inset 0 0 0 1px rgb(234 240 241 / .45); }
-  .demo-for { display: inline-block; margin-bottom: var(--v-5); padding: .5rem .85rem; border-radius: 3px; background: var(--v-accent); color: var(--v-accent-ink); font-size: var(--v-t-xs); font-weight: 500; line-height: 1.35; }
+  .demo-for { position: absolute; z-index: 4; top: 5rem; left: var(--v-gutter); max-width: min(46rem, calc(100% - 2 * var(--v-gutter))); padding: .575rem .98rem; border-radius: 3px; background: var(--v-accent); color: var(--v-accent-ink); font-size: calc(var(--v-t-xs) * 1.15); font-weight: 500; line-height: 1.35; }
   @media (max-width: 860px) {
     .hero .v-fill { bottom: 42svh; } .hero .v-fill img { object-position: 78% 50%; transform: none; }
     .hero__scrim { background: linear-gradient(to top, rgb(26 35 40 / 1) 0%, rgb(26 35 40 / 1) 44%, rgb(26 35 40 / 0) 62%); }
@@ -67,7 +67,6 @@
     .hero__copy h1 { font-size: clamp(2.1rem, 1.2rem + 5vw, 3.1rem); }
     .hero__copy .v-lede { margin-top: var(--v-3); font-size: var(--v-t-base); }
     .hero__btns { margin-top: var(--v-4); }
-    .demo-for { margin-bottom: var(--v-3); }
   }
 
   @media (min-width: 861px) and (max-height: 780px) {
@@ -75,7 +74,6 @@
     .hero__copy h1 { font-size: clamp(2.2rem, .8rem + 3.2vw, 3.8rem); }
     .hero__copy .v-lede { margin-top: var(--v-3); }
     .hero__btns { margin-top: var(--v-4); }
-    .demo-for { margin-bottom: var(--v-3); }
   }
 
   /* акт 2: продукт */
@@ -157,8 +155,8 @@
       <div data-v-stage>
         <div class="v-fill" data-v-parallax="-0.3"><img src="../../assets/cover.webp" alt="Макрофото шлифованной стали (заглушка, здесь будет фоновое видео)" width="1920" height="1080"></div>
         <div class="hero__scrim" aria-hidden="true"></div>
+        <span class="demo-for" data-stub="демо для заказчика">Демо для Anishalghoora - по заказу «Сайт по разработке пакета премиальных B2B»</span>
         <div class="hero__copy" data-v-cue="0 0.82 0">
-          <span class="demo-for" data-stub="демо для заказчика">Демо для Anishalghoora - по заказу «Сайт по разработке пакета премиальных B2B»</span>
           <h1 class="v-display v-display--xl">Все характеристики на одной странице</h1>
           <p class="v-lede">Изучите технические данные и отправьте запрос цены.</p>
           <div class="hero__btns">
